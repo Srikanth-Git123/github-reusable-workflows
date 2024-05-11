@@ -20,7 +20,7 @@ jobs:
 
       - name: Import Vault Secrets
         id: vault-secrets
-        uses: hashicorp/vault-action@v2
+        uses: hashicorp/vault-action@v3
         with:
           url: https://vault.psrikanth.online:8200/
           token: ${{ secrets.vault_token }}
